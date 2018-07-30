@@ -190,7 +190,8 @@
       },
       "asarUnpack": "node_modules/spellchecker/vendor/hunspell_dictionaries",
       "target": [
-        "deb"
+        "deb",
+	"rpm"
       ],
       "icon": "build/icons/png"
     },
@@ -204,6 +205,17 @@
         "libnss3",
         "libasound2",
         "libxss1"
+      ]
+    },
+    "rpm": {
+      "depends": [
+        "GConf2",
+        "libnotify",
+        "libappindicator",
+        "libXtst",
+        "nss",
+        "alsa-lib",
+        "libXScrnSaver"
       ]
     },
     "files": [
